@@ -55,6 +55,10 @@
       <Project>{9E1710B4-A15A-4ADC-A6E4-6CE2D05A22FD}</Project>
       <Name>CompanyManagement.EFDAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CompanyManagement.IBLL\CompanyManagement.IBLL.csproj">
+      <Project>{40B9E2B8-DA78-40F5-917E-7C39D125D2D5}</Project>
+      <Name>CompanyManagement.IBLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CompanyManagement.IDAL\CompanyManagement.IDAL.csproj">
       <Project>{DAEA6FF4-989E-466C-AE98-AC55391783ED}</Project>
       <Name>CompanyManagement.IDAL</Name>

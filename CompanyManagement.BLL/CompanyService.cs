@@ -1,6 +1,7 @@
 ﻿
 using CompanyManagement.DalFactory;
 using CompanyManagement.EFDAL;
+using CompanyManagement.IBLL;
 using CompanyManagement.IDAL;
 using CompanyManagement.Model;
 using System;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 namespace CompanyManagement.BLL
 {
 
-    public class CompanyService : BaseService<Company>
+    public class CompanyService : BaseService<Company>,ICompanyService 
     {
 
         //ICompanyDal companyDal = StaticDalFactory.GetCompanyDal();

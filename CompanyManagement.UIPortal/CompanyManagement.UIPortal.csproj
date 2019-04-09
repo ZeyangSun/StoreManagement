@@ -133,7 +133,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CompanyController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -172,14 +171,12 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Company\Index.cshtml" />
+    <Content Include="Views\Company\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Company\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -210,6 +207,10 @@
     <ProjectReference Include="..\CompanyManagement.EFDAL\CompanyManagement.EFDAL.csproj">
       <Project>{9e1710b4-a15a-4adc-a6e4-6ce2d05a22fd}</Project>
       <Name>CompanyManagement.EFDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CompanyManagement.IBLL\CompanyManagement.IBLL.csproj">
+      <Project>{40B9E2B8-DA78-40F5-917E-7C39D125D2D5}</Project>
+      <Name>CompanyManagement.IBLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\CompanyManagement.IDAL\CompanyManagement.IDAL.csproj">
       <Project>{daea6ff4-989e-466c-ae98-ac55391783ed}</Project>
