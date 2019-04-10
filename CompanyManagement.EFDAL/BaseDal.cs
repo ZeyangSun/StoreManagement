@@ -4,19 +4,26 @@ using System;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using Unity;
+using Unity.Attributes;
 
 namespace CompanyManagement.EFDAL
 {
     //wrap the common crud methods
     public class BaseDal<T> where T : class, new()
     {
+       
+       public DbContext Db
+        {
+            get
+            {
+                return DbContextFactory.GetCurrentDbContext();
+            }
+        }
         //crud
         //DataModel Db = new DataModel();
-        public DbContext Db
-        {
-            get { return DbContextFactory.GetCurrentDbContext(); }
-        }
 
+        //
         //public List<T> GetAllCompanies()
         //{
         //    DataModel Db = new DataModel();
@@ -55,6 +62,7 @@ namespace CompanyManagement.EFDAL
         }
         public T Create(T entity)
         {
+           
             Db.Set<T>().Add(entity);
             //Db.SaveChanges();
             return entity;
@@ -72,6 +80,7 @@ namespace CompanyManagement.EFDAL
             return true;
                 //Db.SaveChanges() > 0;
         }
+        
 
     }
 }

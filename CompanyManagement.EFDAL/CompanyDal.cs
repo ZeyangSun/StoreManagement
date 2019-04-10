@@ -14,7 +14,7 @@ using CompanyManagement.Model;
 namespace CompanyManagement.EFDAL
 {
     
-    public class CompanyDal: BaseDal<Company>,ICompanyDal
+    public class CompanyDal: BaseDal<Company>, ICompanyDal
     {
        // //crud
        // DataModel db = new DataModel();

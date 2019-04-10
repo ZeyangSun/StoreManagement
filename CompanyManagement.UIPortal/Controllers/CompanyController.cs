@@ -10,9 +10,16 @@ using System.Web.Mvc;
 namespace CompanyManagement.UIPortal.Controllers
 {
     public class CompanyController : Controller
-    {
+    {   //ICompanyService companyService = new CompanyService();
+
+        private readonly ICompanyService companyService;
+
+        //inject dependency 
+        public CompanyController(ICompanyService companyService)
+        {
+            this.companyService = companyService;
+        }
         // GET: Company
-        ICompanyService companyService = new CompanyService();
         public ActionResult Index()
         {
             return View(companyService.GetEntitiesByCondition(boolValue => true));
@@ -31,6 +38,7 @@ namespace CompanyManagement.UIPortal.Controllers
         {
             if (ModelState.IsValid)
             {
+                company.Id = Guid.NewGuid();
                 companyService.Add(company);
                 return RedirectToAction("Index");
             }

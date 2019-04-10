@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Unity;
 
 namespace CompanyManagement.BLL
 {
@@ -28,6 +29,7 @@ namespace CompanyManagement.BLL
         //}
         public override void SetCurrentDal()
         {
+           
             CurrentDal = this.DBSession.CompanyDal;
         }
     }

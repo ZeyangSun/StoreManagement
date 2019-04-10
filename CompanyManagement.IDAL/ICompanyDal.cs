@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CompanyManagement.IDAL
 {
-    public interface ICompanyDal: IBaseDal<Company>
+    public interface ICompanyDal : IBaseDal<Company>
     {
 
     }
