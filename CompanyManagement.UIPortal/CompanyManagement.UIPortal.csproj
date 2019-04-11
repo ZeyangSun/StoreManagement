@@ -168,6 +168,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\dbo.Companies.sql" />
+    <Content Include="App_Data\SQLQuery3.sql" />
+    <Content Include="App_Data\StoreMag.ldf">
+      <DependentUpon>StoreMag.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\StoreMag.mdf" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -215,7 +221,6 @@
     <Content Include="Views\Store\GetGeoInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
