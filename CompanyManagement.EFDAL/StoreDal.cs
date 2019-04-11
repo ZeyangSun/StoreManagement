@@ -15,5 +15,6 @@ namespace CompanyManagement.EFDAL
     public class StoreDal : BaseDal<Store>,IStoreDal
 
     {
+       
     }
 }

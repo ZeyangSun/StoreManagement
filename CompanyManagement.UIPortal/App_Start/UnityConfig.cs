@@ -1,4 +1,5 @@
 using CompanyManagement.BLL;
+using CompanyManagement.Common;
 using CompanyManagement.IBLL;
 using CompanyManagement.Model;
 using System.Data.Entity;
@@ -20,6 +21,7 @@ namespace CompanyManagement.UIPortal
             // e.g. container.RegisterType<ITestService, TestService>();
             container.RegisterType<ICompanyService, CompanyService>();
             container.RegisterType<IStoreService, StoreService>();
+            container.RegisterType<IGeocodingAPI, GeocodingAPI>();
            
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }

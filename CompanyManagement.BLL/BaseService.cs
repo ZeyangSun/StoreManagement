@@ -36,6 +36,10 @@ namespace CompanyManagement.BLL
         {
             return CurrentDal.GetEntitiesByCondition(whereLambda);
         }
+        public T FindById(Guid? Id)
+        {
+            return CurrentDal.FindById(Id);
+        }
         public IQueryable<T> GetPageEntities<S>(int pageSize, int pageIndex, out int total,
             Expression<Func<T, bool>> whereLambda,
             Expression<Func<T, S>> orderByLamda,

@@ -35,6 +35,10 @@ namespace CompanyManagement.EFDAL
         {
             return Db.Set<T>().Where(whereLambda).AsQueryable();
         }
+        public T FindById(Guid? Id)
+        {
+            return Db.Set<T>().Find(Id);
+        }
         public IQueryable<T> GetPageEntities<S>(int pageSize, int pageIndex, out int total,
             Expression<Func<T, bool>> whereLambda,
             Expression<Func<T, S>> orderByLamda,
@@ -80,6 +84,7 @@ namespace CompanyManagement.EFDAL
             return true;
                 //Db.SaveChanges() > 0;
         }
+        
         
 
     }

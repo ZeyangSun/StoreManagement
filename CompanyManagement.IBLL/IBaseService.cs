@@ -15,7 +15,7 @@ namespace CompanyManagement.IBLL
             Expression<Func<T, bool>> whereLambda,
             Expression<Func<T, S>> orderByLamda,
             bool isAsc);
-
+        T FindById(Guid? Id);
         T Add(T entity);
 
 
