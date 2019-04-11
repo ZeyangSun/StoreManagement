@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyManagement", "StoreManagement\CompanyManagement.csproj", "{BF3BFF64-5423-4A4F-AB23-9D4BB43F6A93}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyManagement.EFDAL", "CompanyManagement.EFDAL\CompanyManagement.EFDAL.csproj", "{9E1710B4-A15A-4ADC-A6E4-6CE2D05A22FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyManagement.BLL", "CompanyManagement.BLL\CompanyManagement.BLL.csproj", "{45CE5F17-F78E-42DD-A310-A5CFF597FED0}"
@@ -29,10 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BF3BFF64-5423-4A4F-AB23-9D4BB43F6A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF3BFF64-5423-4A4F-AB23-9D4BB43F6A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF3BFF64-5423-4A4F-AB23-9D4BB43F6A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF3BFF64-5423-4A4F-AB23-9D4BB43F6A93}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9E1710B4-A15A-4ADC-A6E4-6CE2D05A22FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9E1710B4-A15A-4ADC-A6E4-6CE2D05A22FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E1710B4-A15A-4ADC-A6E4-6CE2D05A22FD}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -76,10 +76,6 @@
       <Project>{0F279B75-D5AE-45E3-B59B-B4C7E0C1C2AB}</Project>
       <Name>CompanyManagement.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\StoreManagement\CompanyManagement.csproj">
-      <Project>{BF3BFF64-5423-4A4F-AB23-9D4BB43F6A93}</Project>
-      <Name>CompanyManagement</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
